@@ -1,0 +1,458 @@
+@font-face{
+     font-family: "gliny-hand-dense";
+     src: url('../assets/fonts/gliny-hand-dense.ttf');
+     font-display: swap;
+}
+@font-face{
+     font-family: "futura";
+     src: url('../assets/fonts/futura.ttf');
+     font-display: swap;
+}
+@font-face{
+  font-family: "futura-medium";
+  src: url('../assets/fonts/futura-medium.ttf');
+  font-display: swap;
+}
+@font-face{
+  font-family: "futura-demiBold";
+  src: url('../assets/fonts/futura-demiBold.ttf');
+  font-display: swap;
+}
+@font-face{
+  font-family: "futura-bold";
+  src: url('../assets/fonts/futura-bold.ttf');
+  font-display: swap;
+}
+@font-face{
+  font-family: "futura-extrabold";
+  src: url('../assets/fonts/futura-extrabold.ttf');
+  font-display: swap;
+}
+
+:root {
+  --themecolor: #2c2d2c;
+  --hovercolor: black;
+  --bgcolor: #fffdfd;
+  --headerColor: #b1d56d;
+  --fontColor: #cccccc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: #555;
+  background-image: linear-gradient(to bottom right, #20d6d6, #b1d56d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.resume{
+  width: 8.5in;
+  height: 12in;
+  border-radius: 2px;
+  background:  var(--themecolor);
+  box-shadow: 13px 13px 20px #044728,
+              -13px -13px 20px #28c7b248;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+.background{
+  padding-top: 30px;
+
+  img{
+    position: relative;
+    z-index: 0;
+  }
+}
+
+/* --------------------headerContainer-------------------------------------- */
+.upperHeader{
+  margin-top: -845px;
+  margin-left: 20px;
+}
+.personalInfo{
+     font-family: 'futura';
+     margin-left: 2px;
+     width: 560px;
+     //border: 1px solid white;
+     float: left;
+}
+
+.headerContainer{
+     width: 560px;
+}
+.selfName{
+     color: var(--headerColor);
+     font-family: 'futura';
+     font-size: 30px;
+     letter-spacing: 5px;
+     margin-left: 40px;
+     font-weight: normal;
+     
+}
+.selfDesignation{
+    text-align: right;
+     margin-top: 10px;
+     margin-left: 120px;
+     color: white;
+     font-size: 16px;
+     letter-spacing: 4px;
+     font-weight: lighter;
+     font-family: 'futura-medium';
+}
+
+#leftPersonal{
+    float: left;
+    text-align: right;
+    width: 340px; //-20
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+}
+
+#rightPersonal{
+  display: block;
+  float: right;
+  width: 200px; //300
+  background-color: var(--themecolor);
+  margin-top: -212px;
+  margin-right: 18.5px;
+  text-align: right;
+}
+
+
+.image{
+  width:  205px;
+  height: 205px;
+}
+
+.image img{
+  margin-left: 5px;
+  margin-top: -5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #ebebeb;
+}
+
+/* ----------------------------------------------right side hello card -----------------*/
+.helloCard{
+  float: right;
+  width: 250px;
+  //border: 1px solid red;
+}
+
+.helloCardLeftLine{
+  background-color: var(--fontColor);
+  margin-top: 75px;
+  margin-left: -5px;
+  width: 115px;
+  height: 1px;
+}
+
+.helloCardIcon{
+  margin-top: -35px;
+  margin-left: 110px;
+  width: 95px;
+}
+
+.hello{
+     margin-top: -35px;
+     margin-left: 120px;
+     color: var(--headerColor);
+     font-size: 36px;
+     letter-spacing: 6px;
+     font-family: 'gliny-hand-dense';
+     //font-style: italic;
+}
+.selfIntro{
+  text-align: right;
+  margin-top: 15px;
+  margin-left: -100px;
+}
+
+.selfIntro, .workDesc, .eduDesc{
+  color: var(--fontColor);
+  font-size: 12.5px;
+ // border: 1px solid red;
+  width: 330px;
+  letter-spacing: 2px;
+
+  p{
+    font-family: 'futura';
+  }
+}
+
+/* --------------------------Contact Section----------------- */
+
+.contact{
+  width: 335px;
+  margin-top: -120px;
+  position: inherit;
+  z-index: 99;
+
+ 
+  #rightInfoSvgBox{
+    display: block;
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin-top: 220px;
+    // border: 1px solid red;
+
+    .contactHeader{
+     margin-top: -185px;
+     margin-left: -50px;
+     color: var(--headerColor);
+     font-size: 28px;
+     letter-spacing: 3px;
+     font-family: 'gliny-hand-dense';
+    }
+
+
+    .contactItemData{
+      color: var(--fontColor);
+      font-size: 12.5px;
+      //border: 1px solid red;
+      width: 150px;
+      margin-left: -35px;
+      margin-top: 5px;
+      letter-spacing: 0px;
+      margin-bottom: 12px;
+      // border: 1px solid red;
+
+      a{
+        //border: 1px solid red;
+        color: var(--fontColor);
+        font-family: 'futura';
+        font-size: 13.5px;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        font-size: 14.5px;
+      }
+
+      p{
+        margin-top: 5px;
+        font-family: 'futura';
+       
+      }
+      
+    }
+
+  }
+}
+
+  
+/* -------------------Work Experience Section------------------- */
+.title{
+  color: var(--bgcolor);
+  font-family: 'futura';
+  font-size: 16px;
+  letter-spacing: 3px;
+
+}
+
+.header{
+  color: var(--headerColor);
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-family: 'gliny-hand-dense';
+}
+.workExp{
+  //border: 1px solid red;
+  width: 440px;
+  
+  .workInfo{
+    margin-top: 10px;
+  }
+
+  .workExpHeader{
+    margin-top: -75px;
+    margin-left: 125px;
+
+  }
+  .workExpItem{
+    margin-bottom: 79px;
+    border: 1px solid transparent;
+  }
+
+  .workLeftGraphics{
+    float: left;
+    // border: 1px solid red;
+    width: 100px;
+    .time{
+      position: relative;
+      margin-left: 55px;
+      margin-top: 3px;
+      color: var(--themecolor);
+      font-family: 'futura-medium';
+    }
+  }
+  .workDetails{
+    display: block;
+    float: right;
+    width: 330px;
+    // border: 1px solid red;
+
+    .workTitle{
+      margin-top: 2px;
+      margin-left: 10px;
+    }
+    .workDesc{
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+  }
+
+}
+
+/* --------------------------------------Education----------------- */
+.education{
+  position: relative;
+  // border: 1px solid red;
+  width: 335px;
+  height: 355px;
+  margin-left: 475px;
+  margin-top: -265px;
+
+  .eduHeader{
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+  .eduItem{
+    text-align: right;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+
+
+    .eduDetails{
+      border: 1px solid transparent;
+      width: 265px;
+
+      .eduTitle1{
+        margin-top: 18px;
+      }
+      .eduTitle2{
+        margin-top: 17px;
+      }
+      .eduTitle3{
+        margin-top: 25px;
+      }
+      .eduDesc{
+        width: 265px;
+      }
+    }
+
+    .time{
+      position: relative;
+      float: right;
+      // border: 1px solid green;
+      font-size: 14px;
+      height: 50px;
+      margin-right: 5px;
+      margin-top: -65px;
+    }
+
+    .time2{
+      margin-top: -63px;
+    }
+
+    .time3{
+      margin-top: -64px;
+    }
+  }
+}
+
+/* --------------------------Language section------------------- */
+.lang{
+  .langHeader{
+    margin-left: 130px;
+    margin-top: -10px;
+  }
+
+  .langDetails{
+    color: var(--fontColor);
+    font-family: 'futura-medium';
+    letter-spacing: 1.5px;
+    margin-left: 105px;
+    
+    p{
+      margin-top: 25px;
+    }
+  }
+}
+
+/* ---------------------Software Skills------------------ */
+.softwareSkills{
+  .softwareHeader{
+    margin-left: 365px;
+    margin-top: -100px;
+  }
+
+  .softwareItems{
+    margin-left: 385px;
+    margin-top: 22px;
+    // border: 1px solid red;
+    width: 200px;
+    color: var(--fontColor);
+    font-family: 'future-medium';
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    
+  }
+}
+
+/* ---------------------Passions Section------------------ */
+.passions{
+  .passionHeader{
+    margin-left: 680px;
+    margin-top: -170px;
+  }
+
+  .passionItems{
+    color: var(--fontColor);
+    font-family: 'future-medium';
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-left: 680px;
+    p{
+      margin-top: 10px;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------------------- */
+
+@media print {
+  html {
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .resume {
+    width: 100%;
+    box-shadow: none;
+  }
+}
