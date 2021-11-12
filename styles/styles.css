@@ -412,9 +412,10 @@ body {
 }
 
 .softwareSkills .softwareItems {
-  margin-left: 385px;
-  margin-top: 22px;
+  margin-left: 358px;
+  margin-top: 15px;
   width: 200px;
+  text-align: center;
   color: var(--fontColor);
   font-family: 'future-medium';
   font-size: 30px;
@@ -424,8 +425,8 @@ body {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 40px;
+  grid-column-gap: 22px;
+  grid-row-gap: 35px;
 }
 
 /* ---------------------Passions Section------------------ */
